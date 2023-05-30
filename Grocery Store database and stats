@@ -1,7 +1,7 @@
 --HERE I CREATED A SQL TABLE FROM SCRATCH FOR MY GROCERIES DATABASE WITH 5 COLUMNS I BELIEVE IT IS NEEDED TO STORE DATA--
 CREATE TABLE groceries (ID integer primary key,name text, description text, quantity integer,price integer);
 
---INSERT INTO IS WHAT ALLOWS ME TO PUT DATA INTO THE CREATED TABLE ABOVE--
+--INSERT INTO IS WHAT ALLOWS ME TO PUT DATA INTO THE CREATED TABLE SHOWN ABOVE--
 INSERT INTO groceries values
 (1,"Bananas","fruit",150, 5),
 (2,"strawberries","fruit",100,7),
