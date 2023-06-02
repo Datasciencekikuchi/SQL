@@ -49,8 +49,8 @@ Select body, mass, shape from solar_system_objects where type_of_object NOT IN (
 
 SELECT body, mean_radius, mean_radius_rel,volume, volume_rel, mass, mass_rel, density, surface_gravity, 
 surface_gravity_rel, type_of_object, shape
-, CASE WHEN mean_radius > 28690 THEN "very large" 
-    WHEN mean_radius < 28690 THEN "extremely large"
+, CASE WHEN mean_radius > 28700 THEN "very large" 
+    WHEN mean_radius < 28700 THEN "extremely large"
     END AS size_class
 FROM solar_system_objects
 GROUP BY body;
