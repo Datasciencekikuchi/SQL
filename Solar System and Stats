@@ -42,5 +42,19 @@ INSERT INTO solar_system_objects(body,mean_radius,mean_radius_rel,volume,volume_
 
 /* As always, it is important to see the final outcome of the table we just created */
 SELECT * from solar_system_objects;
-*/ Here I wanna see which solar system objets are not a start or satellite, and to my surprise there is one object that is still unknown to us! how interesting! */
+
+*/ Here I wanna see which solar system objets are not a star nor satellite, and to my surprise there 
+is one object that is still unknown to us! how interesting! */
 Select body, mass, shape from solar_system_objects where type_of_object NOT IN ("star","satellite") group by body order by mass ASC;
+
+SELECT body, mean_radius, mean_radius_rel,volume, volume_rel, mass, mass_rel, density, surface_gravity, 
+surface_gravity_rel, type_of_object, shape
+, CASE WHEN mean_radius > 28690 THEN "very large" 
+    WHEN mean_radius < 28690 THEN "extremely large"
+    END AS size_class
+FROM solar_system_objects
+GROUP BY body;
+
+SELECT shape, COUNT(shape) AS num_of_Times_shapes
+FROM solar_system_objects
+GROUP BY shape;
