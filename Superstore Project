@@ -42,3 +42,9 @@ FROM superstore;
 SELECT avg(price)
 FROM superstore
 WHERE category="Kitchen Supplies"
+
+#Show all items in the category furnishings their average_rating that are greater than 4.
+SELECT *
+FROM superstore
+WHERE average_rating >=4 AND category = "Furnishings"
+ORDER BY average_rating desc;
