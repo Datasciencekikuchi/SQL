@@ -150,7 +150,7 @@ INNER JOIN hotels
 ON reservations.hotel = hotels.hotel_id
 ;
 
-3. Self Join to find out who receives feedback from who.
+3. Self Join to Find VIPs who provide feedback to others and the corresponding VIPs who receive their feedback.
 
 SELECT 
     p.member_id  AS provider_id,
