@@ -8,8 +8,8 @@ The projects focus on writing clear, maintainable SQL to analyse customer behavi
 ## Projects Included
 
 ### Customer and Orders Analysis
-SQL analysis of customer and order data to understand purchasing behaviour, order frequency, and revenue patterns.  
-Key techniques include joins, aggregations, subqueries, and CTEs, with basic data validation to ensure consistency and accuracy.
+Transactional SQL analysis across sales and customer tables to quantify order volumes, product mix, location-based purchasing, and revenue by product. Includes data-quality filtering, joins, aggregations, and customer segmentation (e.g., bulk orders and average spend).
+Techniques: JOINs, DISTINCT, CASE/filters, GROUP BY, revenue calculations.
 
 ### Climate Conference Analysis
 SQL analysis of a multi-table conference dataset to understand attendee participation, event engagement, hotel reservations, and feedback relationships.
@@ -24,7 +24,6 @@ Key analysis includes:
 - Aggregating attendance metrics to compare event engagement
 
 Techniques used: LEFT JOIN, INNER JOIN, SELF JOIN, CASE statements, subqueries, GROUP BY, and aggregation.
-
 
 ### Fortune Companies Analysis
 Brief description of the business question or analytical focus.
