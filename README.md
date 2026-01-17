@@ -12,7 +12,19 @@ SQL analysis of customer and order data to understand purchasing behaviour, orde
 Key techniques include joins, aggregations, subqueries, and CTEs, with basic data validation to ensure consistency and accuracy.
 
 ### Climate Conference Analysis
-Brief description of what the dataset represents and the type of analysis performed.
+SQL analysis of a multi-table conference dataset to understand attendee participation, event engagement, hotel reservations, and feedback relationships.
+
+The project models real-world relational data with incomplete records and demonstrates the use of appropriate join strategies, aggregations, subqueries, and case logic to produce business-readable outputs.
+
+Key analysis includes:
+- Linking VIP attendees to events, including attendees without assigned events
+- Analysing hotel and dinner reservations with readable status indicators
+- Identifying feedback relationships using self-joins
+- Determining events and hotels with the highest participation
+- Aggregating attendance metrics to compare event engagement
+
+Techniques used: LEFT JOIN, INNER JOIN, SELF JOIN, CASE statements, subqueries, GROUP BY, and aggregation.
+
 
 ### Fortune Companies Analysis
 Brief description of the business question or analytical focus.
