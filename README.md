@@ -1,9 +1,8 @@
-# Stefania Kikuchi's SQL Portfolio 
 # SQL Portfolio – Data Analysis Projects
 
-This repository contains a collection of SQL-based data analysis projects demonstrating my approach to working with relational datasets, transactional data, and business-focused analysis.
+This repository contains a collection of SQL-based data analysis projects demonstrating my approach to working with relational and transactional datasets in business-focused contexts.
 
-The projects focus on writing clear, maintainable SQL to analyse customer behaviour, orders, and performance metrics, with an emphasis on data accuracy, logical structure, and real-world use cases.
+The projects emphasise writing clear, maintainable SQL to analyse customer behaviour, operational metrics, and structured datasets, with a focus on data accuracy, logical structure, and real-world use cases.
 
 ## Projects Included
 
@@ -12,27 +11,20 @@ Transactional SQL analysis across sales and customer tables to quantify order vo
 Techniques: JOINs, DISTINCT, CASE/filters, GROUP BY, revenue calculations.
 
 ### Climate Conference Analysis
-SQL analysis of a multi-table conference dataset to understand attendee participation, event engagement, hotel reservations, and feedback relationships.
+Relational SQL analysis across VIP attendees, events, and hotel reservations to quantify event participation, booking patterns, and feedback relationships, including attendees with missing event assignments.
+Techniques: LEFT/INNER joins, self-joins, CASE logic, subqueries, GROUP BY aggregation.
 
-The project models real-world relational data with incomplete records and demonstrates the use of appropriate join strategies, aggregations, subqueries, and case logic to produce business-readable outputs.
+### Fortune Companies Workforce & Benefits Analysis
+SQL analysis of company workforce and benefits data to benchmark industries by revenue and headcount, evaluate employee retention using weighted average tenure, and classify benefit generosity across organisations.
+Techniques: GROUP BY aggregation, subqueries, CASE classification, weighted averages.
 
-Key analysis includes:
-- Linking VIP attendees to events, including attendees without assigned events
-- Analysing hotel and dinner reservations with readable status indicators
-- Identifying feedback relationships using self-joins
-- Determining events and hotels with the highest participation
-- Aggregating attendance metrics to compare event engagement
+### Solar System Dataset Profiling
+SQL-based dataset exploration and classification to summarise distributions (type/shape) and flag anomalies.
+Techniques: filters, CASE, GROUP BY counts.
 
-Techniques used: LEFT JOIN, INNER JOIN, SELF JOIN, CASE statements, subqueries, GROUP BY, and aggregation.
-
-### Fortune Companies Analysis
-Brief description of the business question or analytical focus.
-
-### Solar Systems and Statistics
-Brief description of the business question or analytical focus.
-
-### Superstore Analysis
-Brief description of the business question or analytical focus.
+### Superstore Pricing & Category Analysis
+SQL analysis of retail product data to compare pricing across categories, calculate average price metrics, and filter high-rated items to support basic merchandising and product selection decisions.
+Techniques: ORDER BY, AVG aggregation, WHERE filtering, category segmentation.
 
 ## Skills Demonstrated
 - SQL querying across multiple relational tables
