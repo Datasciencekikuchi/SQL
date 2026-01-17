@@ -35,4 +35,4 @@ Techniques: ORDER BY, AVG aggregation, WHERE filtering, category segmentation.
 
 ## Tools
 - SQL
-Note: These projects are shared for demonstration purposes only and reflect my personal work and approach to data analysis.
+## Note: These projects are shared for demonstration purposes only and reflect my personal work and approach to data analysis.
