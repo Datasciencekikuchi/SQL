@@ -55,3 +55,45 @@ ON FEB.orderid=cust.order_id
 WHERE Feb.Quantity>2
 AND length(orderid) = 6 
 AND orderid <> 'Order ID'
+
+#8. Calculates the total quantity sold for each headphone product in February, filtering for valid order IDs and grouping results by product name.
+SELECT SUM(Quantity), Product
+FROM BIT_DB.FebSales
+WHERE Product LIKE '%Headphones%'
+AND length(orderid) = 6
+AND orderid <> 'Order ID'
+GROUP BY Product;
+
+#9.Computes the average revenue per order in February by joining sales and customer data, using quantity × price for each transaction and excluding invalid order records.
+SELECT avg(quantity*price)
+FROM BIT_DB.FebSales Feb
+LEFT JOIN BIT_DB.customers cust
+ON FEB.orderid=cust.order_id
+WHERE length(orderid) = 6
+AND orderid <> 'Order ID';
+
+#10.Identifies April orders from Georgia where the average item price exceeds $1,000, filtering by valid order IDs and grouping results at the order level.
+SELECT orderID, location
+FROM BIT_DB.AprSales
+WHERE orderdate LIKE '04/1%'
+AND location LIKE '%GA%'
+AND length(orderid) = 6
+AND orderid <> 'Order ID'
+GROUP BY orderID
+HAVING AVG(price) > 1000;
+
+#11.Retrieves the location and order ID for a specific May order pattern, ensuring only valid six-character order IDs are included.
+SELECT location,
+orderID
+FROM MaySales
+WHERE orderID LIKE '1943_5'
+AND length(orderid) = 6
+AND orderid <> 'Order ID';
+
+#12. Determines the highest-revenue product in January by aggregating total sales (quantity × price) per product and returning the top result.
+SELECT product,
+sum(quantity*price) as revenue
+FROM BIT_DB.JanSales
+GROUP BY product
+ORDER BY revenue desc
+LIMIT 1;
