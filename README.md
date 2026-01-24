@@ -26,6 +26,9 @@ Techniques: filters, CASE, GROUP BY counts.
 SQL analysis of retail product data to compare pricing across categories, calculate average price metrics, and filter high-rated items to support basic merchandising and product selection decisions.
 Techniques: ORDER BY, AVG aggregation, WHERE filtering, category segmentation.
 
+### Spotify Analysis
+Analysed Spotify audio feature metrics by exploring their distributions, normalising continuous decimal values into categorical bands, and examining relationships between audio characteristics and track popularity.
+
 ## Skills Demonstrated
 - SQL querying across multiple relational tables
 - Joins, aggregations, subqueries, and CTEs
