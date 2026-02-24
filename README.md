@@ -1,42 +1,121 @@
-# SQL Portfolio – Data Analysis Projects
+# SQL Portfolio – Business-Focused Data Analysis
 
-This repository contains a collection of SQL-based data analysis projects demonstrating my approach to working with relational and transactional datasets in business-focused contexts.
+## Executive Overview
 
-The projects emphasise writing clear, maintainable SQL to analyse customer behaviour, operational metrics, and structured datasets, with a focus on data accuracy, logical structure, and real-world use cases.
+This repository showcases SQL-based analytical projects designed to simulate real-world business reporting and operational analysis scenarios.
 
-## Projects Included
+Each project begins with a defined business question, applies structured SQL analysis across relational datasets, and concludes with insights that support stakeholder decision-making.
 
-### Customer and Orders Analysis
-Transactional SQL analysis across sales and customer tables to quantify order volumes, product mix, location-based purchasing, and revenue by product. Includes data-quality filtering, joins, aggregations, and customer segmentation (e.g., bulk orders and average spend).
-Techniques: JOINs, DISTINCT, CASE/filters, GROUP BY, revenue calculations.
+The focus is not only technical execution, but translating raw data into actionable business intelligence.
 
-### Climate Conference Analysis
-Relational SQL analysis across VIP attendees, events, and hotel reservations to quantify event participation, booking patterns, and feedback relationships, including attendees with missing event assignments.
-Techniques: LEFT/INNER joins, self-joins, CASE logic, subqueries, GROUP BY aggregation.
+---
 
-### Fortune Companies Workforce & Benefits Analysis
-SQL analysis of company workforce and benefits data to benchmark industries by revenue and headcount, evaluate employee retention using weighted average tenure, and classify benefit generosity across organisations.
-Techniques: GROUP BY aggregation, subqueries, CASE classification, weighted averages.
+## Projects
 
-### Solar System Dataset Profiling
-SQL-based dataset exploration and classification to summarise distributions (type/shape) and flag anomalies.
-Techniques: filters, CASE, GROUP BY counts.
+### 1. Customer & Orders Performance Analysis
 
-### Superstore Pricing & Category Analysis
-SQL analysis of retail product data to compare pricing across categories, calculate average price metrics, and filter high-rated items to support basic merchandising and product selection decisions.
-Techniques: ORDER BY, AVG aggregation, WHERE filtering, category segmentation.
+**Business Question**  
+Which customers, products, and locations generate the highest revenue and order volume?
 
-### Spotify Analysis
-Analysed Spotify audio feature metrics by exploring their distributions, normalising continuous decimal values into categorical bands, and examining relationships between audio characteristics and track popularity.
+**Analytical Focus**
+- Customer segmentation (bulk vs average spenders)
+- Revenue by product and geographic location
+- Order frequency and purchasing patterns
+- Transaction-level data validation and filtering
 
-## Skills Demonstrated
-- SQL querying across multiple relational tables
-- Joins, aggregations, subqueries, and CTEs
-- Transactional and customer-level analysis
+**Business Value**
+Supports targeted marketing initiatives, pricing optimisation, and customer retention strategies.
+
+**Techniques Used**
+JOINs, DISTINCT, CASE logic, GROUP BY aggregation, revenue calculations, data-quality filtering
+
+---
+
+### 2. Climate Conference Participation Analysis
+
+**Business Question**  
+How do attendee participation patterns relate to booking behaviour and feedback engagement?
+
+**Analytical Focus**
+- Event participation tracking
+- Reservation behaviour across VIP attendees
+- Identifying attendees with missing event assignments
+- Analysing feedback relationships across sessions
+
+**Business Value**
+Improves event planning, operational coordination, and attendee experience management.
+
+**Techniques Used**
+LEFT and INNER JOINs, self-joins, subqueries, CASE logic, GROUP BY aggregation
+
+---
+
+### 3. Fortune Companies Workforce & Benefits Benchmarking
+
+**Business Question**  
+How do workforce size, revenue, and employee benefits compare across industries?
+
+**Analytical Focus**
+- Industry benchmarking by revenue and headcount
+- Weighted average employee tenure calculations
+- Benefits classification and generosity segmentation
+- Comparative workforce metrics
+
+**Business Value**
+Supports HR strategy development, retention analysis, and industry benchmarking insights.
+
+**Techniques Used**
+GROUP BY aggregation, weighted averages, subqueries, CASE classification
+
+---
+
+### 4. Retail Pricing & Category Performance Analysis (Superstore)
+
+**Business Question**  
+Which product categories demonstrate stronger pricing performance and higher customer ratings?
+
+**Analytical Focus**
+- Average pricing comparisons by category
+- Filtering high-rated products
+- Price-performance segmentation
+
+**Business Value**
+Informs merchandising decisions and product positioning strategies.
+
+**Techniques Used**
+AVG aggregation, WHERE filtering, ORDER BY sorting, category segmentation
+
+---
+
+### 5. Spotify Audio Feature Performance Analysis
+
+**Business Question**  
+Which audio characteristics are associated with higher track popularity?
+
+**Analytical Focus**
+- Normalising continuous audio metrics into categorical bands
+- Popularity classification using CASE logic
+- Comparative feature analysis across popularity levels
+
+**Business Value**
+Demonstrates structured performance analysis and feature-based segmentation logic applicable to broader analytical contexts.
+
+**Techniques Used**
+CASE classification, GROUP BY aggregation, categorical banding, metric comparison
+
+---
+
+## Core Skills Demonstrated
+
+- Relational database querying across multiple tables
+- Transactional and operational performance analysis
+- KPI calculation and segmentation logic
 - Data validation and consistency checks
-- Translating raw data into business-relevant insights
+- Translating structured datasets into business-relevant insights
+- Writing clear, maintainable, and logically structured SQL
+
+---
 
 ## Tools
+
 - SQL
----
-Note: These projects are shared for demonstration purposes only and reflect my personal work and approach to data analysis.
